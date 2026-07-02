@@ -1,0 +1,683 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2868
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="pt-BR">\
+<head>\
+<meta charset="UTF-8">\
+<meta name="viewport" content="width=device-width, initial-scale=1.0">\
+<title>Yasmin Velasco \'97 Social Media & Filmmaker Mobile</title>\
+<link rel="preconnect" href="https://fonts.googleapis.com">\
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">\
+<style>\
+  :root\{\
+    --bg:#fbf6f3;\
+    --bg-soft:#f5e7e2;\
+    --ink:#2b211f;\
+    --ink-soft:#75605c;\
+    --rose:#c98d89;\
+    --rose-deep:#a05e58;\
+    --line: rgba(160,94,88,0.25);\
+    --serif: 'Cormorant Garamond', serif;\
+    --sans: 'Jost', sans-serif;\
+  \}\
+  *\{margin:0;padding:0;box-sizing:border-box;\}\
+  html\{scroll-behavior:smooth;\}\
+  body\{\
+    background:var(--bg);\
+    color:var(--ink);\
+    font-family:var(--sans);\
+    font-weight:300;\
+    overflow-x:hidden;\
+  \}\
+  ::selection\{background:var(--rose-deep);color:var(--bg);\}\
+\
+  a\{color:inherit;text-decoration:none;\}\
+  img\{max-width:100%;display:block;\}\
+\
+  .wrap\{max-width:1120px;margin:0 auto;padding:0 32px;\}\
+\
+  /* -------- reveal on scroll -------- */\
+  .reveal\{opacity:0;transform:translateY(24px);transition:opacity .9s ease, transform .9s ease;\}\
+  .reveal.in\{opacity:1;transform:translateY(0);\}\
+\
+  /* -------- eyebrow / rec tag -------- */\
+  .rec\{\
+    display:inline-flex;align-items:center;gap:8px;\
+    font-family:var(--sans);\
+    font-size:11px;letter-spacing:.28em;text-transform:uppercase;\
+    color:var(--rose-deep);\
+    margin-bottom:18px;\
+  \}\
+  .rec::before\{\
+    content:'';width:7px;height:7px;border-radius:50%;\
+    background:var(--rose-deep);\
+    box-shadow:0 0 0 0 rgba(160,94,88,.45);\
+    animation:pulse 2.4s infinite;\
+  \}\
+  @keyframes pulse\{\
+    0%\{box-shadow:0 0 0 0 rgba(160,94,88,.4);\}\
+    70%\{box-shadow:0 0 0 9px rgba(160,94,88,0);\}\
+    100%\{box-shadow:0 0 0 0 rgba(160,94,88,0);\}\
+  \}\
+\
+  h1,h2,h3\{font-family:var(--serif);font-weight:500;letter-spacing:.01em;\}\
+\
+  /* -------- nav -------- */\
+  header\{\
+    position:fixed;top:0;left:0;right:0;z-index:100;\
+    display:flex;align-items:center;justify-content:space-between;\
+    padding:22px 32px;\
+    background:rgba(251,246,243,.7);\
+    backdrop-filter:blur(10px);\
+    border-bottom:1px solid transparent;\
+    transition:border-color .4s ease, background .4s ease;\
+  \}\
+  header.scrolled\{border-color:var(--line);background:rgba(251,246,243,.92);\}\
+  .logo\{\
+    font-family:var(--serif);font-size:22px;letter-spacing:.04em;font-style:italic;\
+    color:var(--ink);\
+  \}\
+  .logo span\{color:var(--rose-deep);\}\
+  nav.links\{display:flex;gap:36px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;\}\
+  nav.links a\{position:relative;color:var(--ink-soft);transition:color .3s;\}\
+  nav.links a::after\{\
+    content:'';position:absolute;left:0;bottom:-6px;width:0;height:1px;background:var(--rose-deep);\
+    transition:width .3s ease;\
+  \}\
+  nav.links a:hover\{color:var(--rose-deep);\}\
+  nav.links a:hover::after\{width:100%;\}\
+  .burger\{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;\}\
+  .burger span\{width:24px;height:1px;background:var(--rose-deep);display:block;\}\
+\
+  /* -------- hero -------- */\
+  .hero\{\
+    min-height:100vh;\
+    display:flex;flex-direction:column;justify-content:center;\
+    position:relative;\
+    padding:140px 32px 90px;\
+  \}\
+  .hero::before\{\
+    content:'';position:absolute;inset:0;\
+    background:\
+      radial-gradient(ellipse at 78% 18%, rgba(201,141,137,.16), transparent 55%),\
+      radial-gradient(ellipse at 15% 85%, rgba(160,94,88,.10), transparent 55%);\
+    pointer-events:none;\
+  \}\
+  .hero-inner\{max-width:1120px;margin:0 auto;width:100%;position:relative;\}\
+  .hero h1\{\
+    font-size:clamp(44px, 8vw, 96px);\
+    line-height:1.02;\
+    color:var(--ink);\
+    max-width:920px;\
+  \}\
+  .hero h1 em\{\
+    font-style:italic;\
+    color:transparent;\
+    -webkit-text-stroke:1px var(--rose-deep);\
+  \}\
+  .hero .gold-line\{\
+    display:inline-block;width:64px;height:1px;background:var(--rose-deep);margin:26px 0;\
+  \}\
+  .hero p.lead\{\
+    font-size:18px;line-height:1.7;color:var(--ink-soft);max-width:480px;font-weight:300;\
+  \}\
+  .hero-cta\{\
+    margin-top:44px;display:flex;gap:20px;flex-wrap:wrap;align-items:center;\
+  \}\
+  .btn\{\
+    display:inline-flex;align-items:center;gap:10px;\
+    padding:17px 34px;\
+    font-family:var(--sans);font-size:13px;letter-spacing:.14em;text-transform:uppercase;\
+    border:1px solid var(--rose-deep);\
+    background:var(--rose-deep);\
+    color:var(--bg);\
+    cursor:pointer;\
+    transition:background .35s ease, color .35s ease, transform .35s ease, box-shadow .35s ease;\
+  \}\
+  .btn:hover\{\
+    background:transparent;color:var(--rose-deep);\
+    transform:translateY(-2px);\
+    box-shadow:0 10px 30px -12px rgba(160,94,88,.35);\
+  \}\
+  .btn-outline\{\
+    background:transparent;color:var(--ink);border:1px solid var(--line);\
+  \}\
+  .btn-outline:hover\{border-color:var(--rose-deep);color:var(--rose-deep);background:transparent;box-shadow:none;\}\
+\
+  .hero-stats\{\
+    margin-top:90px;\
+    display:flex;gap:64px;flex-wrap:wrap;\
+    border-top:1px solid var(--line);\
+    padding-top:28px;\
+  \}\
+  .stat b\{\
+    font-family:var(--serif);font-size:34px;color:var(--rose-deep);display:block;font-weight:500;\
+  \}\
+  .stat span\{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);\}\
+\
+  /* -------- section shell -------- */\
+  section\{padding:120px 0;position:relative;\}\
+  .section-head\{max-width:640px;margin-bottom:64px;\}\
+  .section-head h2\{font-size:clamp(32px,4.4vw,52px);color:var(--ink);line-height:1.1;\}\
+  .section-head p\{margin-top:18px;color:var(--ink-soft);font-size:16px;line-height:1.7;max-width:520px;\}\
+\
+  hr.div\{border:none;border-top:1px solid var(--line);margin:0;\}\
+\
+  /* -------- about -------- */\
+  .about\{background:var(--bg-soft);\}\
+  .about-solo\{display:flex;justify-content:center;\}\
+  .about-text\{max-width:720px;text-align:center;position:relative;\}\
+  .about-text .rec\{justify-content:center;\}\
+  .about-text h2::after\{\
+    content:'';display:block;width:64px;height:1px;background:var(--rose-deep);\
+    margin:22px auto 30px;\
+  \}\
+  .about-text p\{font-size:19px;line-height:1.85;color:var(--ink-soft);font-weight:300;margin-bottom:22px;\}\
+  .about-text p b\{color:var(--rose-deep);font-weight:500;\}\
+  .about-tags\{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px;justify-content:center;\}\
+  .about-tags span\{\
+    padding:9px 18px;border:1px solid var(--line);font-size:12px;letter-spacing:.08em;\
+    color:var(--ink-soft);text-transform:uppercase;\
+  \}\
+\
+  /* -------- services -------- */\
+  .services-grid\{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);\}\
+  .service-card\{\
+    background:var(--bg);padding:44px 34px;\
+    transition:background .4s ease;\
+    position:relative;\
+  \}\
+  .service-card:hover\{background:var(--bg-soft);\}\
+  .service-card .num\{font-family:var(--serif);font-style:italic;font-size:14px;color:var(--rose-deep);\}\
+  .service-card .icon\{margin:22px 0 20px;\}\
+  .service-card h3\{font-size:22px;color:var(--ink);font-weight:500;margin-bottom:10px;\}\
+  .service-card p\{font-size:14.5px;color:var(--ink-soft);line-height:1.6;\}\
+  .service-card svg\{width:30px;height:30px;stroke:var(--rose-deep);fill:none;stroke-width:1.2;\}\
+  .service-card.opt\{position:relative;\}\
+  .service-card.opt .tag\{\
+    position:absolute;top:44px;right:34px;\
+    font-size:10px;letter-spacing:.12em;color:var(--rose-deep);\
+    border:1px solid var(--rose-deep);padding:4px 9px;text-transform:uppercase;\
+  \}\
+\
+  /* -------- portfolio -------- */\
+  .portfolio\{background:var(--bg-soft);\}\
+  .portfolio-grid\{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;\}\
+  .p-card\{\
+    position:relative;border:1px solid var(--line);\
+    background:#fff;\
+    display:flex;flex-direction:column;\
+    overflow:hidden;transition:transform .4s ease, border-color .4s ease;\
+  \}\
+  .p-card:hover\{transform:translateY(-6px);border-color:var(--rose-deep);\}\
+\
+  /* image preview area \'97 swap the linear-gradient for background-image:url(...) to use real photos */\
+  .p-photo\{\
+    position:relative;aspect-ratio:4/3;\
+    background:linear-gradient(150deg,#fff5f1, #f0d9d1 85%);\
+    display:flex;align-items:center;justify-content:center;\
+    overflow:hidden;border-bottom:1px solid var(--line);\
+  \}\
+  .p-photo::before\{\
+    content:'';position:absolute;inset:0;\
+    background:radial-gradient(circle at 25% 20%, rgba(201,141,137,.22), transparent 65%);\
+  \}\
+  .p-photo svg\{width:38px;height:38px;stroke:var(--rose-deep);fill:none;stroke-width:1.1;position:relative;\}\
+  .p-photo .corner\{position:absolute;width:16px;height:16px;\}\
+  .p-photo .c1\{top:12px;left:12px;border-top:1px solid var(--rose-deep);border-left:1px solid var(--rose-deep);\}\
+  .p-photo .c2\{top:12px;right:12px;border-top:1px solid var(--rose-deep);border-right:1px solid var(--rose-deep);\}\
+\
+  .p-info\{padding:22px 24px;position:relative;\}\
+  .p-card .handle\{font-family:var(--serif);font-size:23px;color:var(--ink);position:relative;font-style:italic;\}\
+  .p-card .cat\{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin-top:6px;position:relative;\}\
+  .p-card .arrow\{\
+    position:absolute;top:22px;right:22px;font-size:18px;color:var(--rose-deep);\
+    transform:rotate(45deg);transition:transform .3s ease;\
+  \}\
+  .p-card:hover .arrow\{transform:rotate(90deg);\}\
+  .p-card.site .p-photo\{background:linear-gradient(150deg,#fffaf5, #f3e4d8 85%);\}\
+\
+  /* -------- pricing -------- */\
+  .pricing-grid\{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;\}\
+  .price-card\{\
+    border:1px solid var(--line);padding:38px 26px;display:flex;flex-direction:column;\
+    transition:transform .35s ease, border-color .35s ease;\
+  \}\
+  .price-card:hover\{transform:translateY(-8px);border-color:var(--rose-deep);\}\
+  .price-card .tier\{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--rose-deep);margin-bottom:10px;\}\
+  .price-card h3\{font-family:var(--serif);font-size:30px;color:var(--ink);margin-bottom:4px;\}\
+  .price-card .sub\{font-size:12px;color:var(--ink-soft);margin-bottom:24px;\}\
+  .price-card ul\{list-style:none;flex:1;margin-bottom:28px;\}\
+  .price-card li\{\
+    font-size:13.5px;color:var(--ink-soft);line-height:1.6;padding:9px 0;\
+    border-top:1px solid rgba(43,33,31,.08);\
+  \}\
+  .price-card li:first-child\{border-top:none;\}\
+  .price-card .price\{\
+    font-family:var(--serif);font-size:34px;color:var(--rose-deep);margin-bottom:18px;\
+  \}\
+  .price-card .price small\{font-family:var(--sans);font-size:12px;color:var(--ink-soft);\}\
+  .price-card.featured\{\
+    border-color:var(--rose-deep);\
+    background:linear-gradient(180deg, rgba(201,141,137,.12), transparent 40%);\
+  \}\
+  .price-card .btn\{width:100%;justify-content:center;padding:13px;font-size:12px;\}\
+\
+  .realtime\{\
+    margin-top:60px;border:1px solid var(--line);padding:46px;\
+    display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center;\
+  \}\
+  .realtime h3\{font-size:26px;color:var(--ink);margin-bottom:14px;\}\
+  .realtime p\{color:var(--ink-soft);font-size:14.5px;line-height:1.7;max-width:520px;\}\
+  .realtime .rt-price\{text-align:right;\}\
+  .realtime .rt-price div\{font-family:var(--serif);font-size:30px;color:var(--rose-deep);\}\
+  .realtime .rt-price span\{font-size:12px;color:var(--ink-soft);display:block;margin-top:4px;\}\
+\
+  /* -------- final cta -------- */\
+  .final\{\
+    background:var(--bg-soft);\
+    text-align:center;padding:150px 32px;\
+    position:relative;overflow:hidden;\
+  \}\
+  .final::before\{\
+    content:'';position:absolute;inset:0;\
+    background:radial-gradient(ellipse at 50% 0%, rgba(201,141,137,.18), transparent 60%);\
+  \}\
+  .final-inner\{position:relative;max-width:680px;margin:0 auto;\}\
+  .final h2\{font-size:clamp(34px,5.6vw,64px);color:var(--ink);line-height:1.1;margin-bottom:22px;\}\
+  .final p\{color:var(--ink-soft);font-size:17px;line-height:1.7;margin-bottom:44px;\}\
+  .wa-btn\{\
+    display:inline-flex;align-items:center;gap:12px;\
+    padding:20px 44px;background:var(--rose-deep);color:var(--bg);\
+    font-size:14px;letter-spacing:.12em;text-transform:uppercase;\
+    transition:all .35s ease;\
+  \}\
+  .wa-btn:hover\{background:var(--ink);transform:translateY(-3px);box-shadow:0 16px 40px -16px rgba(156,92,86,.45);\}\
+  .wa-btn svg\{width:20px;height:20px;fill:var(--bg);\}\
+\
+  footer\{\
+    padding:40px 32px;border-top:1px solid var(--line);\
+    display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;\
+  \}\
+  footer p\{font-size:12px;color:var(--ink-soft);letter-spacing:.04em;\}\
+  footer .fname\{font-family:var(--serif);font-style:italic;color:var(--rose-deep);\}\
+\
+  /* -------- floating whatsapp -------- */\
+  .float-wa\{\
+    position:fixed;bottom:26px;right:26px;z-index:90;\
+    width:56px;height:56px;border-radius:50%;\
+    background:var(--rose-deep);display:flex;align-items:center;justify-content:center;\
+    box-shadow:0 10px 30px -10px rgba(0,0,0,.6);\
+    transition:transform .3s ease, background .3s ease;\
+  \}\
+  .float-wa:hover\{transform:scale(1.08);background:var(--ink);\}\
+  .float-wa svg\{width:26px;height:26px;fill:var(--bg);\}\
+\
+  /* -------- responsive -------- */\
+  @media (max-width:980px)\{\
+    .services-grid\{grid-template-columns:repeat(2,1fr);\}\
+    .portfolio-grid\{grid-template-columns:repeat(2,1fr);\}\
+    .pricing-grid\{grid-template-columns:repeat(2,1fr);\}\
+  \}\
+  @media (max-width:680px)\{\
+    .wrap\{padding:0 22px;\}\
+    nav.links\{\
+      position:fixed;top:0;right:0;height:100vh;width:72%;\
+      background:rgba(251,246,243,.98);backdrop-filter:blur(14px);\
+      flex-direction:column;justify-content:center;align-items:flex-start;\
+      padding:40px;gap:28px;\
+      transform:translateX(100%);transition:transform .4s ease;\
+      border-left:1px solid var(--line);\
+    \}\
+    nav.links.open\{transform:translateX(0);\}\
+    .burger\{display:flex;\}\
+    .hero\{padding:120px 22px 70px;\}\
+    .hero-stats\{gap:36px;\}\
+    .services-grid\{grid-template-columns:1fr;\}\
+    .portfolio-grid\{grid-template-columns:1fr;\}\
+    .pricing-grid\{grid-template-columns:1fr;\}\
+    section\{padding:80px 0;\}\
+    .realtime\{grid-template-columns:1fr;text-align:left;padding:32px;\}\
+    .realtime .rt-price\{text-align:left;\}\
+    .final\{padding:100px 22px;\}\
+  \}\
+</style>\
+</head>\
+<body>\
+\
+<header id="header">\
+  <div class="logo">Yasmin <span>Velasco</span></div>\
+  <nav class="links" id="navLinks">\
+    <a href="#sobre" onclick="closeMenu()">Sobre</a>\
+    <a href="#servicos" onclick="closeMenu()">Servi\'e7os</a>\
+    <a href="#portfolio" onclick="closeMenu()">Portf\'f3lio</a>\
+    <a href="#precos" onclick="closeMenu()">Investimento</a>\
+    <a href="#contato" onclick="closeMenu()">Contato</a>\
+  </nav>\
+  <button class="burger" id="burger" aria-label="Abrir menu">\
+    <span></span><span></span><span></span>\
+  </button>\
+</header>\
+\
+<!-- HERO -->\
+<section class="hero">\
+  <div class="hero-inner">\
+    <div class="rec">Social Media \'b7 Estrategista Digital \'b7 Filmmaker Mobile</div>\
+    <h1>Conte\'fado que <em>conecta</em>,<br>estrat\'e9gia que <em>converte</em>.</h1>\
+    <span class="gold-line"></span>\
+    <p class="lead">Gest\'e3o de redes sociais e produ\'e7\'e3o audiovisual mobile para marcas que querem ser lembradas \'97 da estrat\'e9gia ao clique de gravar.</p>\
+    <div class="hero-cta">\
+      <a href="#contato" class="btn">Solicitar or\'e7amento</a>\
+      <a href="#precos" class="btn btn-outline">Ver pacotes</a>\
+    </div>\
+    <div class="hero-stats">\
+      <div class="stat"><b>50+</b><span>Contas atendidas</span></div>\
+      <div class="stat"><b>RN</b><span>Natal & Grande Natal</span></div>\
+      <div class="stat"><b>100%</b><span>Mobile filmmaking</span></div>\
+    </div>\
+  </div>\
+</section>\
+\
+<!-- SOBRE -->\
+<section class="about" id="sobre">\
+  <div class="wrap about-solo">\
+    <div class="about-text reveal">\
+      <div class="rec">Sobre mim</div>\
+      <h2 style="font-size:38px;color:var(--ink);margin-bottom:22px;">Comunica\'e7\'e3o \'e9 a minha linguagem.</h2>\
+      <p>Sou social media com <b>mais de 50 contas atendidas</b>, estrategista digital e apaixonada por comunica\'e7\'e3o.</p>\
+      <p>Transformo perfis em marcas reconhec\'edveis \'97 unindo planejamento estrat\'e9gico, dire\'e7\'e3o de conte\'fado e capta\'e7\'e3o audiovisual mobile para entregar resultado com identidade.</p>\
+      <div class="about-tags">\
+        <span>Estrat\'e9gia de conte\'fado</span>\
+        <span>Dire\'e7\'e3o de arte</span>\
+        <span>Filmmaker mobile</span>\
+        <span>Gest\'e3o de comunidade</span>\
+      </div>\
+    </div>\
+  </div>\
+</section>\
+\
+<!-- SERVI\'c7OS -->\
+<section id="servicos">\
+  <div class="wrap">\
+    <div class="section-head reveal">\
+      <div class="rec">O que eu entrego</div>\
+      <h2>Servi\'e7os</h2>\
+      <p>Cada entrega \'e9 pensada para dar consist\'eancia, presen\'e7a e resultado real ao seu perfil.</p>\
+    </div>\
+  </div>\
+  <div class="wrap">\
+    <div class="services-grid reveal">\
+      <div class="service-card">\
+        <div class="num">01</div>\
+        <div class="icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></div>\
+        <h3>Gest\'e3o de Instagram</h3>\
+        <p>Administra\'e7\'e3o completa do perfil, com curadoria de conte\'fado e presen\'e7a estrat\'e9gica.</p>\
+      </div>\
+      <div class="service-card">\
+        <div class="num">02</div>\
+        <div class="icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 3v3M16 3v3"/></svg></div>\
+        <h3>Planejamento de conte\'fado</h3>\
+        <p>Calend\'e1rio editorial estrat\'e9gico alinhado aos objetivos e \'e0 identidade da marca.</p>\
+      </div>\
+      <div class="service-card">\
+        <div class="num">03</div>\
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M4 20l4-1 11-11-3-3L5 16l-1 4z"/><path d="M14 6l3 3"/></svg></div>\
+        <h3>Cria\'e7\'e3o de legendas</h3>\
+        <p>Textos com voz pr\'f3pria, tom de conversa e chamada estrat\'e9gica para a\'e7\'e3o.</p>\
+      </div>\
+      <div class="service-card opt">\
+        <span class="tag">Opcional</span>\
+        <div class="num">04</div>\
+        <div class="icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="8" r="1.4"/><circle cx="16" cy="13" r="1.4"/><circle cx="8" cy="13" r="1.4"/></svg></div>\
+        <h3>Design para redes sociais</h3>\
+        <p>Pe\'e7as gr\'e1ficas e identidade visual aplicada aos posts, stories e carross\'e9is.</p>\
+      </div>\
+      <div class="service-card">\
+        <div class="num">05</div>\
+        <div class="icon"><svg viewBox="0 0 24 24"><rect x="2" y="6" width="14" height="12" rx="2"/><path d="M16 10l6-3v10l-6-3"/></svg></div>\
+        <h3>Cobertura de eventos</h3>\
+        <p>Capta\'e7\'e3o em tempo real com entrega \'e1gil de conte\'fado durante o evento.</p>\
+      </div>\
+      <div class="service-card">\
+        <div class="num">06</div>\
+        <div class="icon"><svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></div>\
+        <h3>Filmmaker mobile</h3>\
+        <p>Produ\'e7\'e3o audiovisual 100% mobile: reels, bastidores e narrativa em v\'eddeo.</p>\
+      </div>\
+    </div>\
+  </div>\
+</section>\
+\
+<!-- PORTF\'d3LIO -->\
+<section class="portfolio" id="portfolio">\
+  <div class="wrap">\
+    <div class="section-head reveal">\
+      <div class="rec">Trabalhos recentes</div>\
+      <h2>Portf\'f3lio</h2>\
+      <p>Marcas e projetos que j\'e1 passaram pela minha estrat\'e9gia e c\'e2mera.</p>\
+    </div>\
+    <div class="portfolio-grid reveal">\
+      <a class="p-card" href="https://www.instagram.com/padronarisodontologia/" target="_blank" rel="noopener">\
+        <div class="p-photo">\
+          <div class="corner c1"></div><div class="corner c2"></div>\
+          <svg viewBox="0 0 24 24"><path d="M12 4c-2 0-2.8 1.2-4.2 1.2C6 5.2 4.5 4.3 3.5 5.3c-1.4 1.4-.7 4 0 6 .7 2 1.6 6.8 3.4 6.8 1.4 0 1.3-2.2 2.1-2.2s.7 2.2 2.1 2.2c1.8 0 2.7-4.8 3.4-6.8.7-2 1.4-4.6 0-6-1-1-2.5-.1-3.8-.1C14.8 5.2 14 4 12 4Z"/></svg>\
+        </div>\
+        <div class="p-info">\
+          <span class="arrow">\uc0\u8599 </span>\
+          <div class="handle">Padronaris</div>\
+          <div class="cat">Odontologia</div>\
+        </div>\
+      </a>\
+      <a class="p-card" href="https://www.instagram.com/hospitalmedvale/" target="_blank" rel="noopener">\
+        <div class="p-photo">\
+          <div class="corner c1"></div><div class="corner c2"></div>\
+          <svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-9.7-9C.6 8.2 2.3 4.5 6 4.5c2.1 0 3.4 1.1 6 3.4 2.6-2.3 3.9-3.4 6-3.4 3.7 0 5.4 3.7 3.7 7.5-2.2 4.4-9.7 9-9.7 9Z"/><path d="M9 12h2.3l1-2.3L13.7 14l1-2h2.3"/></svg>\
+        </div>\
+        <div class="p-info">\
+          <span class="arrow">\uc0\u8599 </span>\
+          <div class="handle">Hospital Medvale</div>\
+          <div class="cat">Sa\'fade</div>\
+        </div>\
+      </a>\
+      <a class="p-card" href="https://www.instagram.com/expoeduc/" target="_blank" rel="noopener">\
+        <div class="p-photo">\
+          <div class="corner c1"></div><div class="corner c2"></div>\
+          <svg viewBox="0 0 24 24"><path d="M2 9 12 4l10 5-10 5-10-5Z"/><path d="M6 11.5V16c0 1.4 2.7 2.5 6 2.5s6-1.1 6-2.5v-4.5"/><path d="M22 9v6.5"/></svg>\
+        </div>\
+        <div class="p-info">\
+          <span class="arrow">\uc0\u8599 </span>\
+          <div class="handle">Expoeduc</div>\
+          <div class="cat">Evento educacional</div>\
+        </div>\
+      </a>\
+      <a class="p-card" href="https://www.instagram.com/arraiadotabua/" target="_blank" rel="noopener">\
+        <div class="p-photo">\
+          <div class="corner c1"></div><div class="corner c2"></div>\
+          <svg viewBox="0 0 24 24"><path d="M3 3v18"/><path d="M3 4h7l-1.5 2.5L10 9H3"/><path d="M3 9h7l-1.5 2.5L10 14H3"/></svg>\
+        </div>\
+        <div class="p-info">\
+          <span class="arrow">\uc0\u8599 </span>\
+          <div class="handle">Arrai\'e1 do Tabua</div>\
+          <div class="cat">Evento cultural</div>\
+        </div>\
+      </a>\
+      <a class="p-card" href="https://www.instagram.com/familiasempreendedoras/" target="_blank" rel="noopener">\
+        <div class="p-photo">\
+          <div class="corner c1"></div><div class="corner c2"></div>\
+          <svg viewBox="0 0 24 24"><circle cx="8" cy="8" r="3"/><circle cx="17" cy="9" r="2.6"/><path d="M2.5 20c0-3.3 2.5-6 5.5-6s5.5 2.7 5.5 6"/><path d="M13.5 14.3c2.5.2 4.5 2.6 4.5 5.7"/></svg>\
+        </div>\
+        <div class="p-info">\
+          <span class="arrow">\uc0\u8599 </span>\
+          <div class="handle">Fam\'edlias Empreendedoras</div>\
+          <div class="cat">Educa\'e7\'e3o & neg\'f3cios</div>\
+        </div>\
+      </a>\
+      <a class="p-card" href="https://www.instagram.com/dralisonraniere/" target="_blank" rel="noopener">\
+        <div class="p-photo">\
+          <div class="corner c1"></div><div class="corner c2"></div>\
+          <svg viewBox="0 0 24 24"><path d="M9 3a5 5 0 0 1 5 5v2.5a5 5 0 0 1-2 4v2.5a2 2 0 0 1-2 2H9"/><path d="M9 3a5 5 0 0 0-5 5v3a5 5 0 0 0 3 4.6"/><path d="M13 8c1 0 1.6.6 1.6 1.5"/></svg>\
+        </div>\
+        <div class="p-info">\
+          <span class="arrow">\uc0\u8599 </span>\
+          <div class="handle">Dra. Alison Raniere</div>\
+          <div class="cat">Psiquiatria</div>\
+        </div>\
+      </a>\
+    </div>\
+    <a class="p-card site reveal" href="https://yasminvelasco.keepo.bio" target="_blank" rel="noopener" style="margin-top:26px;">\
+      <div class="p-photo" style="aspect-ratio:auto;padding:34px 0;">\
+        <div class="corner c1"></div><div class="corner c2"></div>\
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 4 5.7 4 9s-1.5 6.5-4 9c-2.5-2.5-4-5.7-4-9s1.5-6.5 4-9Z"/></svg>\
+      </div>\
+      <div class="p-info">\
+        <span class="arrow">\uc0\u8599 </span>\
+        <div class="handle">yasminvelasco.keepo.bio</div>\
+        <div class="cat">Site & link central de portf\'f3lio</div>\
+      </div>\
+    </a>\
+  </div>\
+</section>\
+\
+<!-- PRE\'c7OS -->\
+<section id="precos">\
+  <div class="wrap">\
+    <div class="section-head reveal">\
+      <div class="rec">Investimento</div>\
+      <h2>Pacotes & pre\'e7os</h2>\
+      <p>Escolha o plano que melhor se encaixa no ritmo e nos objetivos da sua marca.</p>\
+    </div>\
+\
+    <div class="pricing-grid reveal">\
+      <div class="price-card">\
+        <div class="tier">Pacote 1</div>\
+        <h3>Prata</h3>\
+        <div class="sub">Visita mensal</div>\
+        <div class="price">R$ 450<small>/m\'eas</small></div>\
+        <ul>\
+          <li>Capta\'e7\'e3o de at\'e9 4 reels</li>\
+          <li>Materiais para stories</li>\
+          <li>Entrega dos v\'eddeos editados</li>\
+        </ul>\
+        <a href="#contato" class="btn">Escolher plano</a>\
+      </div>\
+\
+      <div class="price-card">\
+        <div class="tier">Pacote 2</div>\
+        <h3>Ouro</h3>\
+        <div class="sub">Visita quinzenal</div>\
+        <div class="price">R$ 750<small>/m\'eas</small></div>\
+        <ul>\
+          <li>Capta\'e7\'e3o de at\'e9 10 reels</li>\
+          <li>Materiais para stories</li>\
+          <li>Entrega dos v\'eddeos editados</li>\
+        </ul>\
+        <a href="#contato" class="btn">Escolher plano</a>\
+      </div>\
+\
+      <div class="price-card featured">\
+        <div class="tier">Pacote 3</div>\
+        <h3>Diamante</h3>\
+        <div class="sub">Visita quinzenal</div>\
+        <div class="price">R$ 950<small>/m\'eas</small></div>\
+        <ul>\
+          <li>Capta\'e7\'e3o de at\'e9 8 reels</li>\
+          <li>Materiais para stories</li>\
+          <li>Planejamento de conte\'fado</li>\
+          <li>Dire\'e7\'e3o de arte</li>\
+          <li>Legendas</li>\
+          <li>Agendamento de postagens</li>\
+        </ul>\
+        <a href="#contato" class="btn">Escolher plano</a>\
+      </div>\
+\
+      <div class="price-card">\
+        <div class="tier">Pacote 4</div>\
+        <h3>Ouro Completo</h3>\
+        <div class="sub">Visita quinzenal</div>\
+        <div class="price">R$ 1.100<small>/m\'eas</small></div>\
+        <ul>\
+          <li>Capta\'e7\'e3o de at\'e9 10 reels</li>\
+          <li>Materiais para stories</li>\
+          <li>Planejamento de conte\'fado</li>\
+          <li>Dire\'e7\'e3o de arte + material gr\'e1fico</li>\
+          <li>Legendas</li>\
+          <li>Agendamento de postagens</li>\
+        </ul>\
+        <a href="#contato" class="btn">Escolher plano</a>\
+      </div>\
+    </div>\
+\
+    <div class="realtime reveal">\
+      <div>\
+        <div class="rec">Cobertura ao vivo</div>\
+        <h3>Real Time \'97 cobertura de eventos</h3>\
+        <p>Capta\'e7\'e3o e entrega de conte\'fado durante o pr\'f3prio evento. Deslocamento incluso em Natal e Grande Natal; para outros munic\'edpios, valor combinado com a contratante.</p>\
+      </div>\
+      <div class="rt-price">\
+        <div>R$ 300</div>\
+        <span>at\'e9 3h de evento</span>\
+        <div style="font-size:20px;margin-top:14px;">+ R$ 85</div>\
+        <span>por hora adicional</span>\
+      </div>\
+    </div>\
+  </div>\
+</section>\
+\
+<!-- CTA FINAL -->\
+<section class="final" id="contato">\
+  <div class="final-inner">\
+    <div class="rec" style="justify-content:center;">Vamos conversar</div>\
+    <h2>Pronta para elevar<br>sua presen\'e7a digital?</h2>\
+    <p>Fale agora comigo pelo WhatsApp e receba um or\'e7amento personalizado para a sua marca.</p>\
+    <a class="wa-btn" id="waCta" href="#" target="_blank" rel="noopener">\
+      <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.87.5 3.63 1.42 5.13L2 22l5.13-1.5a9.87 9.87 0 0 0 4.91 1.31h.01c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2Zm5.8 14.02c-.24.68-1.4 1.3-1.93 1.35-.5.05-1.02.25-3.42-.71-2.9-1.17-4.77-4.13-4.92-4.32-.14-.19-1.18-1.57-1.18-3 0-1.42.75-2.12 1.01-2.41.27-.29.58-.36.78-.36.2 0 .39 0 .56.01.18.01.42-.07.66.5.24.58.83 2 .9 2.14.07.15.12.32.02.51-.1.19-.15.31-.3.48-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.29.76 1.25 1.63 2.02 1.12.99 2.06 1.3 2.35 1.45.29.15.46.13.63-.08.17-.2.72-.84.91-1.13.19-.29.39-.24.65-.14.27.1 1.68.79 1.97.93.29.15.48.22.55.34.07.13.07.75-.17 1.43Z"/></svg>\
+      Chamar no WhatsApp\
+    </a>\
+  </div>\
+</section>\
+\
+<footer>\
+  <p><span class="fname">Yasmin Velasco</span> \'97 Social Media & Filmmaker Mobile</p>\
+  <p>Natal & Grande Natal, RN</p>\
+</footer>\
+\
+<a class="float-wa" id="waFloat" href="#" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">\
+  <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.87.5 3.63 1.42 5.13L2 22l5.13-1.5a9.87 9.87 0 0 0 4.91 1.31h.01c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2Zm5.8 14.02c-.24.68-1.4 1.3-1.93 1.35-.5.05-1.02.25-3.42-.71-2.9-1.17-4.77-4.13-4.92-4.32-.14-.19-1.18-1.57-1.18-3 0-1.42.75-2.12 1.01-2.41.27-.29.58-.36.78-.36.2 0 .39 0 .56.01.18.01.42-.07.66.5.24.58.83 2 .9 2.14.07.15.12.32.02.51-.1.19-.15.31-.3.48-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.29.76 1.25 1.63 2.02 1.12.99 2.06 1.3 2.35 1.45.29.15.46.13.63-.08.17-.2.72-.84.91-1.13.19-.29.39-.24.65-.14.27.1 1.68.79 1.97.93.29.15.48.22.55.34.07.13.07.75-.17 1.43Z"/></svg>\
+</a>\
+\
+<script>\
+  // WhatsApp link\
+  const phone = "5584994810479";\
+  const msg = encodeURIComponent("Ol\'e1, Yasmin! Vim pelo seu site e gostaria de solicitar um or\'e7amento para gest\'e3o de redes sociais.");\
+  const waLink = `https://wa.me/$\{phone\}?text=$\{msg\}`;\
+  document.getElementById('waCta').href = waLink;\
+  document.getElementById('waFloat').href = waLink;\
+\
+  // header on scroll\
+  const header = document.getElementById('header');\
+  window.addEventListener('scroll', () => \{\
+    header.classList.toggle('scrolled', window.scrollY > 40);\
+  \});\
+\
+  // mobile menu\
+  const burger = document.getElementById('burger');\
+  const navLinks = document.getElementById('navLinks');\
+  burger.addEventListener('click', () => navLinks.classList.toggle('open'));\
+  function closeMenu()\{ navLinks.classList.remove('open'); \}\
+\
+  // reveal on scroll\
+  const revealEls = document.querySelectorAll('.reveal');\
+  const io = new IntersectionObserver((entries) => \{\
+    entries.forEach(e => \{ if(e.isIntersecting)\{ e.target.classList.add('in'); io.unobserve(e.target);\} \});\
+  \}, \{ threshold: 0.15 \});\
+  revealEls.forEach(el => io.observe(el));\
+</script>\
+\
+</body>\
+</html>}
